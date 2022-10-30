@@ -126,5 +126,19 @@ El estado inicial de una promesa es:
 Una vez que la operación contenida se resuelve, el estado de la promesa pasa a:
 - Cumplida (fulfilled): la operación salió bien, y su resultado será manejado por el callback asignado mediante el método .then().
 - Rechazada (rejected): la operación falló, y su error será manejado por el callback asignado mediante el método .catch().
+*/
 
+/** 
+Timers
+setTimeout
+- Es una función nativa, no hace falta importarla.
+- La función setTimeout() recibe un callback, y lo ejecuta después de un número específico de milisegundos.
+- Trabaja sobre un modelo asincrónico no bloqueante.
+
+setInterval
+- Es una función nativa, no hace falta importarla.
+- La función setInterval() también recibe un callback, pero a diferencia de setTimeout() lo ejecuta una y otra vez cada vez que se cumple la cantidad de milisegundos indicada.
+- Trabaja sobre un modelo asincrónico no bloqueante.
+- El método setInterval() continuará llamando al callback hasta que se llame a clearInterval() o se cierre la ventana.
+- El objeto devuelto por setInterval() se usa como argumento para llamar a la función clearInterval().
 */
